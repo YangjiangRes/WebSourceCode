@@ -1,0 +1,12 @@
+<% if (site.categories.length){ %>
+  <div class="card mb-3">
+    <div class="card-header card-header-dark">
+      <i class="fa fa-folder-open pe-2"></i> <%= __('categories') %>
+    </div>
+    <div class="p-2">
+      <div class="widget">
+        <%- list_categories({show_count: theme.show_count}) %>
+      </div>
+    </div>
+  </div>
+<% } %>
